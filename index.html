@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      font-family: inherit;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .pulse-button {
+      display: inline-block;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000;
+      background-color: #c2d6d9; /* cyan-bluish-gray */
+      border: none;
+      border-radius: 4px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .pulse-button:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0,0,0,0.2); }
+      70% { box-shadow: 0 0 0 10px rgba(0,0,0,0); }
+      100% { box-shadow: 0 0 0 0 rgba(0,0,0,0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <a class="pulse-button" href="#" target="_blank">Jetzt zur Delegationsreise 2026 anmelden</a>
+  </div>
+</body>
+</html>
